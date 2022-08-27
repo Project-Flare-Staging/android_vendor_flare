@@ -15,3 +15,7 @@ $(call inherit-product, vendor/qcom/sdclang/config/SnapdragonClang.mk)
 
 # Include Pixel GMS
 include vendor/flare/config/pixel.mk
+
+# Google Photos Pixel Exclusive XML
+PRODUCT_COPY_FILES += \
+    vendor/flare/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
