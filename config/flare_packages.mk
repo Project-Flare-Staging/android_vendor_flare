@@ -12,6 +12,7 @@ PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
 # Extra packages
 PRODUCT_PACKAGES += \
+    BatteryStatsViewer \
     OmniJaws \
     OmniStyle
 
