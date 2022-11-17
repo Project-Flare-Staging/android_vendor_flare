@@ -27,3 +27,7 @@ endif
 # Google Photos Pixel Exclusive XML
 PRODUCT_COPY_FILES += \
     vendor/flare/prebuilt/common/etc/sysconfig/pixel_2016_exclusive.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/pixel_2016_exclusive.xml
+
+# Permissions
+PRODUCT_COPY_FILES += \
+    vendor/flare/config/permissions/default_permissions_com.google.android.deskclock.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/default-permissions/default_permissions_com.google.android.deskclock.xml
