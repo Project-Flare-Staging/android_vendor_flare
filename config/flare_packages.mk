@@ -1,3 +1,6 @@
+# Enable some aosp packages allowlist
+PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
+
 # Telephony - CLO
 PRODUCT_PACKAGES += \
     extphonelib \
