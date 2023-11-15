@@ -22,3 +22,9 @@ PRODUCT_VENDOR_PROPERTIES += \
 # Enable Material Design 3 Expressive
 PRODUCT_PRODUCT_PROPERTIES += \
     is_expressive_design_enabled=true
+
+# Paranoid Sense
+ifneq ($(TARGET_FACE_UNLOCK_SUPPORTED),false)
+PRODUCT_SYSTEM_EXT_PROPERTIES += \
+    ro.face.sense_service=true
+endif
