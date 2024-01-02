@@ -3,6 +3,10 @@ PRODUCT_PACKAGES += \
     custom_charger_animation \
     custom_charger_animation_vendor
 
+# Cloned app exemption
+PRODUCT_COPY_FILES += \
+    vendor/flare/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-crdroid-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-crdroid-product.xml
+
 # Enable some aosp packages allowlist
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
