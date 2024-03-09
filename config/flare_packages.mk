@@ -10,6 +10,10 @@ PRODUCT_COPY_FILES += \
 # Enable some aosp packages allowlist
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
+# Extra packages
+PRODUCT_PACKAGES += \
+    OmniStyle
+
 # HIDL
 PRODUCT_PACKAGES += \
     android.hidl.base@1.0 \
