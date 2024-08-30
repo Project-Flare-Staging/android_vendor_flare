@@ -1,3 +1,9 @@
+# DeviceAsWebcam
+ifeq ($(TARGET_BUILD_DEVICE_AS_WEBCAM), true)
+PRODUCT_VENDOR_PROPERTIES += \
+    ro.usb.uvc.enabled=true
+endif
+
 # Disable async MTE on a few processes
 PRODUCT_SYSTEM_EXT_PROPERTIES += \
     arm64.memtag.process.system_server=off

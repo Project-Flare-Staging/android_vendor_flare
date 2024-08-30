@@ -13,6 +13,12 @@ PRODUCT_PACKAGES += \
     ColumbusService
 endif
 
+# DeviceAsWebcam
+ifeq ($(TARGET_BUILD_DEVICE_AS_WEBCAM), true)
+PRODUCT_PACKAGES += \
+    DeviceAsWebcam
+endif
+
 # Enable some aosp packages allowlist
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
