@@ -14,6 +14,8 @@ PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 PRODUCT_PACKAGES += \
     BatteryStatsViewer \
     GameSpace \
+    LMOFreeform \
+    LMOFreeformSidebar \
     OmniJaws \
     OmniStyle
 
