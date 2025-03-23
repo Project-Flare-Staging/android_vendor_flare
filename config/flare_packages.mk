@@ -7,6 +7,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     vendor/flare/prebuilt/common/etc/sysconfig/preinstalled-packages-platform-crdroid-product.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/preinstalled-packages-platform-crdroid-product.xml
 
+# ColumbusService
+ifneq ($(TARGET_SUPPORTS_QUICK_TAP),false)
+PRODUCT_PACKAGES += \
+    ColumbusService
+endif
+
 # Enable some aosp packages allowlist
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
