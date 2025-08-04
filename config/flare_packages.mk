@@ -15,6 +15,7 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworkOverlayCustom \
     SettingsOverlayCustom
 
 # Protobuf - Workaround for prebuilt Qualcomm HAL
