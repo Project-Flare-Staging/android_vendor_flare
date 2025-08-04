@@ -5,4 +5,5 @@ PRODUCT_PACKAGES += \
 
 # Overlay
 PRODUCT_PACKAGES += \
+    FrameworkOverlayCustom \
     SettingsOverlayCustom
