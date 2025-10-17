@@ -14,6 +14,9 @@ PRODUCT_PACKAGES += \
     android.hidl.manager@1.0.vendor
 
 # Overlay
+PRODUCT_PACKAGE_OVERLAYS += \
+    vendor/flare/overlay/common_pixel
+
 PRODUCT_PACKAGES += \
     FrameworkOverlayCustom \
     SettingsOverlayCustom
