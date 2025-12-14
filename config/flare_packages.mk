@@ -1,3 +1,8 @@
+# Charger
+PRODUCT_PACKAGES += \
+    custom_charger_animation \
+    custom_charger_animation_vendor
+
 # Enable some aosp packages allowlist
 PRODUCT_PACKAGES += initial-package-stopped-states-aosp.xml
 
