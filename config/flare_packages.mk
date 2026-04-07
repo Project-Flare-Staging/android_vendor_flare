@@ -21,6 +21,9 @@ PRODUCT_PACKAGES += \
     FrameworkOverlayPixel \
     SettingsOverlayPixel
 
+PRODUCT_PACKAGES += \
+    FrameworkOverlayFlare
+
 # Protobuf - Workaround for prebuilt Qualcomm HAL
 PRODUCT_PACKAGES += \
     libprotobuf-cpp-full-3.9.1-vendorcompat \
