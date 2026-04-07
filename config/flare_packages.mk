@@ -10,3 +10,6 @@ PRODUCT_PACKAGE_OVERLAYS += \
 PRODUCT_PACKAGES += \
     FrameworkOverlayPixel \
     SettingsOverlayPixel
+
+PRODUCT_PACKAGES += \
+    FrameworkOverlayFlare
