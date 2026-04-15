@@ -12,3 +12,6 @@ $(call inherit-product, vendor/qcom/sdclang/config/SnapdragonClang.mk)
 
 # Enable support for APEX updates
 $(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# Include Pixel GMS
+$(call inherit-product, vendor/flare/config/pixel.mk)
