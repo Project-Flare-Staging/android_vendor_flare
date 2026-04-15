@@ -91,6 +91,7 @@ SYSTEMUI_OPTIMIZE_JAVA ?= true
 # Disable vendor restrictions
 PRODUCT_RESTRICT_VENDOR_FILES := false
 
+TARGET_DISABLE_EPPE := true
 ifneq ($(TARGET_DISABLE_EPPE),true)
 # Require all requested packages to exist
 $(call enforce-product-packages-exist-internal,$(lastword $(_include_stack)),product_manifest.xml rild Calendar android.hidl.memory@1.0-impl.vendor vndk_apex_snapshot_package)
