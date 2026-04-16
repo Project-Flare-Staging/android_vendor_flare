@@ -27,3 +27,16 @@ $(LINEAGE_TARGET_PACKAGE): $(INTERNAL_OTA_PACKAGE_TARGET)
 
 .PHONY: bacon
 bacon: $(LINEAGE_TARGET_PACKAGE) $(DEFAULT_GOAL)
+
+# -----------------------------------------------------------------
+# Lineage fastboot image package
+
+FLARE_IMG_PACKAGE := $(PRODUCT_OUT)/flare-$(LINEAGE_VERSION)-img.zip
+
+$(FLARE_IMG_PACKAGE): $(INTERNAL_UPDATE_PACKAGE_TARGET)
+	$(hide) ln -f $(INTERNAL_UPDATE_PACKAGE_TARGET) $(FLARE_IMG_PACKAGE)
+	$(hide) $(SHA256) $(FLARE_IMG_PACKAGE) | sed "s|$(PRODUCT_OUT)/||" > $(FLARE_IMG_PACKAGE).sha256sum
+	@echo "IMG Package: $(FLARE_IMG_PACKAGE)" >&2
+
+.PHONY: bacon-img
+bacon-img: $(DEFAULT_GOAL) $(FLARE_IMG_PACKAGE)
