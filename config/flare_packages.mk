@@ -8,5 +8,5 @@ PRODUCT_PACKAGE_OVERLAYS += \
     vendor/flare/overlay/common_pixel
 
 PRODUCT_PACKAGES += \
-    FrameworkOverlayCustom \
-    SettingsOverlayCustom
+    FrameworkOverlayPixel \
+    SettingsOverlayPixel
