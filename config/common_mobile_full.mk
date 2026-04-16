@@ -1,5 +1,5 @@
 # Inherit common Lineage stuff
-$(call inherit-product, vendor/lineage/config/common_mobile.mk)
+$(call inherit-product, vendor/flare/config/common_mobile.mk)
 
 PRODUCT_SIZE := full
 
@@ -10,5 +10,5 @@ PRODUCT_PACKAGES += \
 endif
 
 # Include Lineage LatinIME dictionaries
-PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
-PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
+PRODUCT_PACKAGE_OVERLAYS += vendor/flare/overlay/dictionaries
+PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/flare/overlay/dictionaries
