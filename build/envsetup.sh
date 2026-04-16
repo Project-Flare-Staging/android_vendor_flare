@@ -30,13 +30,21 @@ function check_product()
 
 function brunch()
 {
-    breakfast $*
-    if [ $? -eq 0 ]; then
-        mka bacon
-    else
-        echo "No such item in brunch menu. Try 'breakfast'"
-        return 1
+    local img_flag=""
+    if [ "$2" = "img" ]; then
+        img_flag="img"
     fi
+    breakfast $1;
+    if [ $? -eq 0 ]; then
+        if [ -n "$img_flag" ]; then
+            mka bacon-img;
+        else
+            mka bacon;
+        fi
+    else
+        echo "No such item in brunch menu. Try 'breakfast'";
+        return 1;
+    fi;
     return $?
 }
 
