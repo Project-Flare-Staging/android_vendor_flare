@@ -1,6 +1,9 @@
 # Inherit common mobile Lineage stuff
 $(call inherit-product, vendor/flare/config/common.mk)
 
+# Inherit flare vault
+$(call inherit-product, vendor/flare/config/flare_vault.mk)
+
 # Apps
 ifeq ($(PRODUCT_TYPE), go)
 PRODUCT_PACKAGES += \
